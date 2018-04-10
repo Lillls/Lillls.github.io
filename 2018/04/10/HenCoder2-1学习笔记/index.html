@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="小雨的博客">
 <meta property="og:description" content="布局的工作内容​    布局的过程分为测量和布局的过程  从上到下递归地调用每个 View 或者 ViewGroup 的 measure() 方法，测量他们的尺寸并计算它们的位置 从上到下递归地调用每个 View 或者 ViewGroup 的 layout() 方法，把测得的它们的尺寸和位置赋值给它们  布局的具体过程 测量阶段,measure() 方法被父 View 调用，在 measure()">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-10T02:58:35.093Z">
+<meta property="og:updated_time" content="2018-04-10T03:08:28.141Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HenCoder2-1学习笔记">
 <meta name="twitter:description" content="布局的工作内容​    布局的过程分为测量和布局的过程  从上到下递归地调用每个 View 或者 ViewGroup 的 measure() 方法，测量他们的尺寸并计算它们的位置 从上到下递归地调用每个 View 或者 ViewGroup 的 layout() 方法，把测得的它们的尺寸和位置赋值给它们  布局的具体过程 测量阶段,measure() 方法被父 View 调用，在 measure()">
@@ -331,9 +331,9 @@
 <li><code>ViewGroup</code>会在<code>onMeasure()</code>方法中调用所有子<code>View</code>的<code>measure()</code>方法,让他们自我计算,然后根据子<code>View</code>计算出的期望尺寸来算出他们的实际尺寸和位置保存.同事也会根据子<code>View</code>的尺寸和位置来计算出自己的尺寸和位置,然后保存</li>
 </ul>
 </li>
-<li>布局阶段,<code>layout()</code>方法会被父<code>View</code>调用,传进来他自己的尺寸和位置,然后调用<code>onLayout()</code>来进行内部<code>View</code>的自我布局,<code>onLayout()</code>方法做的事,<code>View</code>和<code>ViewGroup</code>做的也不一样<ul>
+<li>布局阶段,<code>layout()</code>方法会被父<code>View</code>调用,会把之前测量阶段的这个子<code>View</code>的位置和尺寸,通过参数传递进来,然后调用<code>onLayout()</code>来进行内部<code>View</code>的自我布局,<code>onLayout()</code>方法做的事,<code>View</code>和<code>ViewGroup</code>做的也不一样<ul>
 <li><code>View</code>由于内部没有子<code>View</code>,所以<code>View</code>的<code>onLayout(</code>)的空方法</li>
-<li><code>ViewGroup</code> 在 <code>onLayout()</code> 中会调用自己的所有子 <code>View</code> 的 <code>layout()</code> 方法，把它们的尺寸和位置传给它们，让它们完成自我的内部布局。</li>
+<li><code>ViewGroup</code> 在 <code>onLayout()</code> 中会调用自己的所有子 <code>View</code> 的 <code>layout()</code> 方法，把它们的尺寸和位置传给它们，让它们完成自我的内部布局。内部布局就是根据测量结果来摆放所有子<code>View</code>的位置</li>
 </ul>
 </li>
 </ol>
@@ -373,8 +373,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/27/Android集成环信客服机器人/" rel="next" title="Android集成环信客服机器人">
-                <i class="fa fa-chevron-left"></i> Android集成环信客服机器人
+              <a href="/2018/03/21/使用DrawerLayout-Fragment实现的侧滑效果/" rel="next" title="使用DrawerLayout+Fragment实现的侧滑效果">
+                <i class="fa fa-chevron-left"></i> 使用DrawerLayout+Fragment实现的侧滑效果
               </a>
             
           </div>
@@ -458,7 +458,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
