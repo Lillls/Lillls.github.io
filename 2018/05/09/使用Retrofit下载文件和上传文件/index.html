@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="小雨的博客">
 <meta property="og:description" content="上传 第一种 只有文件/图片的上传123456/** * 上传图片 */@POST(&quot;room/fileUpload&quot;)@Multipartfun upload(@Part file: MultipartBody.Part): Observable&amp;lt;ResMsg&amp;gt; 1234567891011121314private fun upload() &amp;#123;        val fil">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-09T07:05:47.984Z">
+<meta property="og:updated_time" content="2018-05-09T07:07:13.713Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Retrofit下载文件和上传文件">
 <meta name="twitter:description" content="上传 第一种 只有文件/图片的上传123456/** * 上传图片 */@POST(&quot;room/fileUpload&quot;)@Multipartfun upload(@Part file: MultipartBody.Part): Observable&amp;lt;ResMsg&amp;gt; 1234567891011121314private fun upload() &amp;#123;        val fil">
@@ -342,7 +342,7 @@
 </ol>
 <pre><code># 下载
 
-
+文件下载
 
 <figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 文件下载</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@POST(<span class="meta-string">"/appService/download"</span>)</span></span><br><span class="line"><span class="meta">@FormUrlEncoded</span></span><br><span class="line"><span class="meta">@Streaming</span></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">download</span><span class="params">(<span class="meta">@Field(<span class="meta-string">"gpartNodeName"</span>)</span> gpartNodeName: <span class="type">String</span>, <span class="meta">@Field(<span class="meta-string">"partNodeName"</span>)</span> partNodeName: <span class="type">String</span>, <span class="meta">@Field(<span class="meta-string">"treeNodeName"</span>)</span> treeNodeName: <span class="type">String</span>)</span></span>: Observable&lt;ResponseBody&gt;</span><br></pre></td></tr></table></figure>
 
